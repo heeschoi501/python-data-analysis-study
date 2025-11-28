@@ -13,31 +13,12 @@ Interpretation: Large deviations indicate discrepancies for study purposes, not 
 
 The tool analyzes the Zernike spectrum across $\mathbf{6}$ distinct $\text{Overlay}$ components.
 
-Metric
 
-Physical Significance
-
-Analysis Type
-
-Average X/Y
-
-Overall image placement error
-
-Position Error
-
-3Sigma X/Y
-
-Intra-field uniformity and statistical spread
-
-Uniformity Error
-
-Residual X/Y
-
-Unexplained errors remaining after systematic correction
-
-Unexplained Noise
-
-MetricPhysical SignificanceAnalysis TypeAverage X/YOverall image placement errorPosition Error3Sigma X/YIntra-field uniformity and statistical spreadUniformity ErrorResidual X/YUnexplained errors after correctionUnexplained Noise
+| Metric        | Physical Significance                  | Analysis Type       |
+|--------------|----------------------------------------|----------------------|
+| Average X/Y  | Overall image placement error          | Position Error       |
+| 3Sigma X/Y   | Intra-field uniformity and spread      | Uniformity Error     |
+| Residual X/Y | Unexplained errors after correction    | Unexplained Noise    |
 
 3. Features (Prototype)
 
