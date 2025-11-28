@@ -1,16 +1,13 @@
 🔬 Zernike Target Deviation Analyzer (6-Metric Overlay RCA)
+Purpose
+This project is a research prototype designed for simulation and academic analysis of Zernike deviation in lithography processes.
+It is not intended for production or manufacturing environments.
 
-This project serves as the final deliverable for the Track 2: Data Analysis & Automation phase. It demonstrates the ability to perform Zernike deviation analysis on lithography process parameters, focusing on simulation for research purposes.
-
-The tool provides an interactive, local GUI dashboard for comparative diagnosis between ideal and measured lens aberration states.
-
-1. 🔑 Core Diagnostic Logic: Target Deviation
-
-This tool utilizes the principle of Deviation Analysis, calculating the pure difference between the desired state and the measured state.
-
-$$\text{Deviation Vector} = \text{Target Zernike (Reference)} - \text{Actual Zernike (Measured)}$$
-
-Interpretation: A calculated deviation indicates a discrepancy between the expected performance of the lens and the measured input. (Target Z is 0, so the Deviation equals the Measured Zernike).
+1. Core Concept: Target Deviation
+The tool applies Deviation Analysis, calculating the difference between the desired and measured states:
+Deviation Vector=Target Zernike (Reference)−Actual Zernike (Measured)\text{Deviation Vector} = \text{Target Zernike (Reference)} - \text{Actual Zernike (Measured)}Deviation Vector=Target Zernike (Reference)−Actual Zernike (Measured)
+Since Target Z = 0, the deviation equals the measured Zernike.
+Interpretation: Large deviations indicate discrepancies for study purposes, not real-time correction.
 
 2. 📊 Analysis Scope and Metrics
 
@@ -40,23 +37,19 @@ Unexplained errors remaining after systematic correction
 
 Unexplained Noise
 
-3. 🖥️ Tool Features
+MetricPhysical SignificanceAnalysis TypeAverage X/YOverall image placement errorPosition Error3Sigma X/YIntra-field uniformity and statistical spreadUniformity ErrorResidual X/YUnexplained errors after correctionUnexplained Noise
 
-A. Local GUI Control (Tkinter)
+3. Features (Prototype)
 
-The application uses a Tkinter GUI for metric selection, allowing the user to dynamically select the metrics (up to 6) for simultaneous display.
+GUI Control (Tkinter): Select up to 6 metrics dynamically for visualization.
+Visualization (Matplotlib): Combined plots showing:
 
-B. Consolidated Visualization (Matplotlib)
+Target (Reference)
+Measured
+Deviation
 
-The final report displays selected deviation results simultaneously on a single figure, with each plot showing three critical lines for comparison:
 
-Reference (Target Z)
-
-Actual (Measured Z)
-
-Result (Deviation)
-
-C. Execution Command
+Execution:
 
 Run the application using the local Python interpreter:
 
