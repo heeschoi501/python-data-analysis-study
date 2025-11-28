@@ -44,7 +44,7 @@ Unexplained Noise
 
 A. Local GUI Control (Tkinter)
 
-The application uses a Tkinter GUI for metric selection, allowing the user to dynamically select the metrics (up to 6) for simultaneous display. This functionality is handled entirely by the GUI, eliminating the need for manual source code modification to change the dashboard view.
+The application uses a Tkinter GUI for metric selection, allowing the user to dynamically select the metrics (up to 6) for simultaneous display.
 
 B. Consolidated Visualization (Matplotlib)
 
