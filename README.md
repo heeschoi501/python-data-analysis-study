@@ -17,7 +17,7 @@ The tool analyzes the Zernike spectrum across $\mathbf{6}$ distinct $\text{Overl
 | Metric        | Physical Significance                  | Analysis Type       |
 |--------------|----------------------------------------|----------------------|
 | Average X/Y  | Overall image placement error          | Position Error       |
-| 3Sigma X/Y   | Intra-field uniformity and spread      | Uniformity Error     |
+| 3Sigma X/Y   | Field Uniformity and Statistical Spread| Uniformity Error     |
 | Residual X/Y | Unexplained errors after correction    | Unexplained Noise    |
 
 3. Features (Prototype)
